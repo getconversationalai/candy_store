@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Shuk | Israel's Magical Candy Marketplace</title>
+    <meta name="description" content="Experience the joy and wonder of a traditional Israeli shuk with extraordinary sweets you won't find anywhere else.">
+    
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/sweet-shuk-logo.svg" alt="Sweet Shuk Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#treasures">Sweet Treasures</a></li>
+                    <li><a href="#events">Experiences</a></li>
+                    <li><a href="#visit">Visit Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#visit" class="btn btn-primary">DISCOVER THE MAGIC</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-video-container">
+                <video autoplay muted loop id="hero-video">
+                    <source src="videos/market-experience.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <h1>SWEET SHUK: ISRAEL'S MAGICAL CANDY MARKETPLACE</h1>
+                <p class="hero-subtitle">Step into the joy and wonder of a traditional Middle Eastern market filled with extraordinary sweets you won't find anywhere else</p>
+                <div class="hero-cta">
+                    <a href="#visit" class="btn btn-primary btn-large">DISCOVER THE MAGIC</a>
+                </div>
+                <div class="trust-element">
+                    <p>Join 10,000+ visitors who've experienced our sweet adventure</p>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(4.9/5 from 347 reviews)</span>
+                    </div>
+                </div>
+                <div class="instant-clarity">
+                    <p>The only Israeli shuk-style candy marketplace in [city]</p>
+                </div>
+                <div class="sensory-trigger">
+                    <button id="soundToggle" class="btn btn-secondary">
+                        <i class="fas fa-volume-up"></i> Hear the Market Sounds
+                    </button>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <a href="#emotional-connection">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Emotional Connection & FOMO Section -->
+        <section class="emotional-connection" id="emotional-connection">
+            <div class="container">
+                <h2>MEMORIES YOU CAN TASTE</h2>
+                <p class="section-lead">Remember the excitement of discovering treasures in a bustling market? We've captured that magical feeling in a candy paradise that awakens childhood wonder and cultural nostalgia.</p>
+                
+                <div class="fomo-ticker">
+                    <div class="ticker-content">
+                        <span>Just today: 127 visitors discovered their new favorite treat</span>
+                    </div>
+                </div>
+                
+                <div class="experience-cards">
+                    <div class="experience-card">
+                        <div class="card-image">
+                            <img src="images/discover-flavors.jpg" alt="Woman tasting halva with emotional expression">
+                        </div>
+                        <h3>DISCOVER FORGOTTEN FLAVORS</h3>
+                        <p>Taste the halva that brought tears to Rachel's eyes as she remembered her grandmother's kitchen in Tel Aviv</p>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="card-image">
+                            <img src="images/joyful-moments.jpg" alt="Children selecting candies from bins">
+                        </div>
+                        <h3>CREATE JOYFUL MOMENTS</h3>
+                        <p>Watch your children's eyes light up as they select treasures from colorful market bins just like in the streets of Jerusalem</p>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="card-image">
+                            <img src="images/impossible-find.jpg" alt="Woman holding Turkish Delight">
+                        </div>
+                        <h3>TASTE THE IMPOSSIBLE-TO-FIND</h3>
+                        <p>Sara drove 2 hours just to find the authentic Turkish Delight she hadn't tasted since childhood</p>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="card-image">
+                            <img src="images/our-story.jpg" alt="Family enjoying sweets together">
+                        </div>
+                        <h3>BECOME PART OF OUR STORY</h3>
+                        <p>Every visitor adds to the vibrant tapestry of our market community</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treasure Showcase (Products) -->
+        <section class="treasure-showcase" id="treasures">
+            <div class="container">
+                <h2>TREASURES YOU CAN'T RESIST</h2>
+                <p class="section-lead">The colors will catch your eye. The aromas will transport you. The flavors will become obsessions.</p>
+                
+                <div class="product-carousel">
+                    <div class="product-category">
+                        <div class="product-image">
+                            <img src="images/halva-display.jpg" alt="Variety of halva and Turkish delight">
+                        </div>
+                        <div class="product-content">
+                            <h3>TASTE OF NOSTALGIA</h3>
+                            <p>Authentic halva and Turkish delight that taste exactly like the market stalls of Tel Aviv</p>
+                            <div class="customer-quote">
+                                <p>"I haven't tasted halva this good since I left Israel"</p>
+                                <span class="quote-author">— David K.</span>
+                            </div>
+                            <div class="scarcity-trigger">
+                                <p>Pistachio halva made fresh every Thursday</p>
+                            </div>
+                            <button class="btn btn-accent">I WANT THIS</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-category">
+                        <div class="product-image">
+                            <img src="images/israeli-classics.jpg" alt="Elite chocolates and Krembo display">
+                        </div>
+                        <div class="product-content">
+                            <h3>CHILDHOOD MEMORIES</h3>
+                            <p>Krembo and Elite chocolates that generations of Israeli children have grown up loving</p>
+                            <div class="customer-quote">
+                                <p>"My kids now ask for Krembo instead of cookies—a little piece of my childhood lives on!"</p>
+                                <span class="quote-author">— Sarah M.</span>
+                            </div>
+                            <div class="scarcity-trigger">
+                                <p>Limited seasonal availability (Oct-March)</p>
+                            </div>
+                            <button class="btn btn-accent">I WANT THIS</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-category">
+                        <div class="product-image">
+                            <img src="images/artisan-making.jpg" alt="Candy maker creating fresh treats">
+                        </div>
+                        <div class="product-content">
+                            <h3>MADE WITH LOVE</h3>
+                            <p>Watch as our artisans craft fresh delights using techniques passed down through generations</p>
+                            <div class="customer-quote">
+                                <p>"Watching them make the rose-flavored Turkish delight was as mesmerizing as tasting it"</p>
+                                <span class="quote-author">— Michael T.</span>
+                            </div>
+                            <div class="scarcity-trigger">
+                                <p>Demonstrations daily at 2pm & 5pm</p>
+                            </div>
+                            <button class="btn btn-accent">I WANT THIS</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-category">
+                        <div class="product-image">
+                            <img src="images/rare-finds.jpg" alt="Unique international candies">
+                        </div>
+                        <div class="product-content">
+                            <h3>DISCOVERIES TO BRAG ABOUT</h3>
+                            <p>Be the first to introduce your friends to these rare international finds</p>
+                            <div class="customer-quote">
+                                <p>"I brought these date-filled chocolates to a dinner party and everyone wanted to know where I found them"</p>
+                                <span class="quote-author">— Rachel G.</span>
+                            </div>
+                            <div class="scarcity-trigger">
+                                <p>Limited quantities - new shipment every 2nd Friday</p>
+                            </div>
+                            <button class="btn btn-accent">I WANT THIS</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-navigation">
+                    <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-indicators">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emotional Connection Story -->
+        <section class="founder-story" id="about">
+            <div class="container">
+                <div class="story-content">
+                    <h2>THE DREAM THAT BECAME SWEET SHUK</h2>
+                    <div class="founder-images">
+                        <div class="founder-image">
+                            <img src="images/founder-child.jpg" alt="Founder as a child in Jerusalem market">
+                            <p>Jerusalem, 1985</p>
+                        </div>
+                        <div class="founder-connector">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="founder-image">
+                            <img src="images/founder-store.jpg" alt="Founder in Sweet Shuk today">
+                            <p>Sweet Shuk, Today</p>
+                        </div>
+                    </div>
+                    <div class="founder-quote">
+                        <p>"I still remember the first time my grandmother took my hand and led me through Jerusalem's bustling shuk. The colors, sounds, and sweet aromas created a memory so powerful that I've spent years recreating that exact feeling of wonder for you."</p>
+                        <span class="quote-author">— Sarah, Founder</span>
+                    </div>
+                    <p class="belonging-appeal">Every person who walks through our doors becomes part of our extended family, continuing a tradition of joy that spans generations and continents</p>
+                    <div class="social-proof">
+                        <p>As featured in:</p>
+                        <div class="publication-logos">
+                            <img src="images/logo-1.png" alt="Food Magazine Logo">
+                            <img src="images/logo-2.png" alt="Local News Logo">
+                            <img src="images/logo-3.png" alt="Travel Blog Logo">
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-secondary">JOIN OUR FAMILY STORY</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof & FOMO Gallery -->
+        <section class="social-gallery" id="gallery">
+            <div class="container">
+                <h2>MOMENTS OF JOY YOU'RE MISSING</h2>
+                <p class="section-lead">Every day, people just like you are discovering their new favorite treats and creating memories that last a lifetime</p>
+                
+                <div class="gallery-feed">
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted 2 minutes ago</div>
+                        <img src="images/gallery-1.jpg" alt="Father and daughter selecting candies">
+                        <div class="gallery-caption">
+                            <p>"Maya tried halva for the first time today and declared it's better than ice cream! #SweetShuk"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted 25 minutes ago</div>
+                        <img src="images/gallery-2.jpg" alt="Elderly woman emotional over candy">
+                        <div class="gallery-caption">
+                            <p>"Grandma cried when she tasted these—just like the ones from her childhood in Tel Aviv #Memories"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted 1 hour ago</div>
+                        <img src="images/gallery-3.jpg" alt="Child with wide eyes looking at candy">
+                        <div class="gallery-caption">
+                            <p>"Jacob's first market experience. The look on his face was priceless! #SweetMemories"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted 3 hours ago</div>
+                        <img src="images/gallery-4.jpg" alt="Group of friends sharing candy">
+                        <div class="gallery-caption">
+                            <p>"Friend reunion made sweeter at #SweetShuk. We can't decide who found the best treasure!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted 5 hours ago</div>
+                        <img src="images/gallery-5.jpg" alt="Person holding Turkish delight">
+                        <div class="gallery-caption">
+                            <p>"Found my grandmother's favorite rose Turkish delight after searching for YEARS! #Emotional"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="time-indicator">Posted yesterday</div>
+                        <img src="images/gallery-6.jpg" alt="Special event demonstration">
+                        <div class="gallery-caption">
+                            <p>"Learning how to make halva from the master! Best afternoon ever at #SweetShuk"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="urgency-calendar">
+                    <h3>Special Demonstrations This Week</h3>
+                    <div class="calendar-events">
+                        <div class="calendar-event">
+                            <div class="event-date">
+                                <span class="day">12</span>
+                                <span class="month">APR</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Master Halva Making</h4>
+                                <p>2:00 PM - Learn ancient techniques</p>
+                                <div class="event-capacity">
+                                    <div class="capacity-bar">
+                                        <div class="capacity-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span>80% Full - 4 spots left</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-event">
+                            <div class="event-date">
+                                <span class="day">14</span>
+                                <span class="month">APR</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Children's Candy Adventure</h4>
+                                <p>11:00 AM - Create your own sweets</p>
+                                <div class="event-capacity">
+                                    <div class="capacity-bar">
+                                        <div class="capacity-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span>ALMOST SOLD OUT - 1 spot left</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#visit" class="btn btn-primary">DON'T MISS OUT - JOIN THE SWEET SHUK FAMILY TODAY</a>
+            </div>
+        </section>
+
+        <!-- Emotional Transformation Stories -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2>LIVES SWEETENED BY SWEET SHUK</h2>
+                <p class="section-lead">More than just candy, we're creating moments that matter</p>
+                
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/testimonial-1.jpg" alt="Rachel K.">
+                            <div class="testimonial-meta">
+                                <h3>Family Healing</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i> Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"After my father passed away, I'd lost my connection to Israel. The moment I smelled the sesame halva at Sweet Shuk, I broke down in tears. My 7-year-old son now asks to visit his 'Israeli grandfather's favorite place' every weekend."</p>
+                            <span class="testimonial-author">— Rachel K.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/testimonial-2.jpg" alt="David L.">
+                            <div class="testimonial-meta">
+                                <h3>Cultural Reconnection</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i> Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"I moved to America 15 years ago and resigned myself to never tasting my childhood favorites again. Sweet Shuk doesn't just sell Israeli candy—they've given me back a piece of my identity."</p>
+                            <span class="testimonial-author">— David L.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/testimonial-3.jpg" alt="Sarah M.">
+                            <div class="testimonial-meta">
+                                <h3>Generational Joy</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i> Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"Watching my American-born children experience the same market joy I felt growing up in Tel Aviv is priceless. They now speak more Hebrew and ask questions about their heritage."</p>
+                            <span class="testimonial-author">— Sarah M.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/testimonial-4.jpg" alt="Michael T.">
+                            <div class="testimonial-meta">
+                                <h3>Special Needs Victory</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i> Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"My son with sensory issues rarely tries new foods. The kind staff at Sweet Shuk spent an hour helping him discover textures he could enjoy. He now has THREE favorite treats!"</p>
+                            <span class="testimonial-author">— Michael T.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="community-counter">
+                    <p>Join 1,000+ families who've found more than just candy at Sweet Shuk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exclusive Experiences & FOMO Events -->
+        <section class="events" id="events">
+            <div class="container">
+                <h2>DON'T MISS THESE MAGICAL MOMENTS</h2>
+                <p class="section-lead">Limited-capacity experiences that sell out every week</p>
+                
+                <div class="events-timeline">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/event-halva.jpg" alt="Halva making demonstration">
+                            <div class="capacity-indicator">73% FULL</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Halva Secrets Revealed</h3>
+                            <p class="event-description">Learn the techniques my grandmother protected for 80 years</p>
+                            <div class="event-details">
+                                <p><i class="far fa-calendar"></i> Saturday, April 15 • 2:00 PM</p>
+                                <p><i class="far fa-clock"></i> 90 minutes</p>
+                                <p><i class="far fa-user"></i> All ages welcome</p>
+                            </div>
+                            <div class="event-testimonial">
+                                <p>"I never knew how much love went into making halva until this class. Now I appreciate every bite even more." — Daniel K.</p>
+                            </div>
+                            <button class="btn btn-primary">SECURE YOUR SPOT NOW</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/event-children.jpg" alt="Children's candy workshop">
+                            <div class="capacity-indicator urgent">ALMOST SOLD OUT</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Children's Candy Adventure</h3>
+                            <p class="event-description">Watch your child's face light up as they create their own sweet masterpiece</p>
+                            <div class="event-details">
+                                <p><i class="far fa-calendar"></i> Sunday, April 16 • 11:00 AM</p>
+                                <p><i class="far fa-clock"></i> 60 minutes</p>
+                                <p><i class="far fa-user"></i> Ages 5-12</p>
+                            </div>
+                            <div class="event-testimonial">
+                                <p>"My daughter couldn't stop talking about making her own chocolate treats. Best birthday present ever!" — Lisa M.</p>
+                            </div>
+                            <button class="btn btn-primary">SECURE YOUR SPOT NOW</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/event-telaviv.jpg" alt="Evening tasting event">
+                            <div class="capacity-indicator">
+                                <div class="countdown">
+                                    <span>2</span> days <span>7</span> hours
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Taste of Tel Aviv After Hours</h3>
+                            <p class="event-description">An adults-only evening of exotic flavors and stories from the heart of Israel</p>
+                            <div class="event-details">
+                                <p><i class="far fa-calendar"></i> Friday, April 21 • 8:00 PM</p>
+                                <p><i class="far fa-clock"></i> 2 hours</p>
+                                <p><i class="far fa-user"></i> 21+ only</p>
+                            </div>
+                            <div class="event-testimonial">
+                                <p>"The combination of incredible sweets and the stories behind them made for an unforgettable date night." — Rebecca & Aaron</p>
+                            </div>
+                            <button class="btn btn-primary">SECURE YOUR SPOT NOW</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/event-family.jpg" alt="Family workshop">
+                            <div class="capacity-indicator">BOOKING FAST</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Family Heritage Workshop</h3>
+                            <p class="event-description">Create sweet traditions that your family will pass down for generations</p>
+                            <div class="event-details">
+                                <p><i class="far fa-calendar"></i> Saturday, April 22 • 1:00 PM</p>
+                                <p><i class="far fa-clock"></i> 2 hours</p>
+                                <p><i class="far fa-user"></i> All ages welcome</p>
+                            </div>
+                            <div class="event-testimonial">
+                                <p>"Three generations of our family participated, and we all learned something new. A beautiful way to connect." — The Cohen Family</p>
+                            </div>
+                            <button class="btn btn-primary">SECURE YOUR SPOT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey to Joy (Location & Hours) -->
+        <section class="location" id="visit">
+            <div class="container">
+                <h2>YOUR SWEET ADVENTURE BEGINS HERE</h2>
+                <p class="section-lead">Just minutes away from your everyday life, a world of wonder awaits</p>
+                
+                <div class="location-container">
+                    <div class="map-container">
+                        <div id="store-map">
+                            <!-- Map will be loaded here via JavaScript -->
+                            <img src="images/map-placeholder.jpg" alt="Map to Sweet Shuk">
+                        </div>
+                        <div class="map-overlay">
+                            <div class="today-specials">
+                                <h3>TODAY'S HIGHLIGHTS</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-star"></i> TODAY'S SPECIAL: Rose-infused halva being made fresh at 2PM
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-gift"></i> JUST ARRIVED: Rare pomegranate Turkish delight (limited quantity)
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-calendar-check"></i> WEEKEND HIGHLIGHT: Master candy maker demonstration Saturday
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-details">
+                        <div class="hours-container">
+                            <div class="open-now">
+                                <span class="status-indicator"></span> OPEN NOW
+                            </div>
+                            <h3>Store Hours</h3>
+                            <ul class="hours-list">
+                                <li><span>Monday - Thursday:</span> <span>10:00 AM - 8:00 PM</span></li>
+                                <li><span>Friday:</span> <span>10:00 AM - 9:00 PM</span></li>
+                                <li><span>Saturday:</span> <span>9:00 AM - 9:00 PM</span></li>
+                                <li><span>Sunday:</span> <span>11:00 AM - 6:00 PM</span></li>
+                            </ul>
+                            
+                            <div class="address">
+                                <h3>Find Us</h3>
+                                <p>123 Market Street<br>
+                                Anytown, ST 12345</p>
+                                <p>Phone: (555) 123-4567</p>
+                            </div>
+                            
+                            <div class="convenience-info">
+                                <div class="convenience-item">
+                                    <i class="fas fa-car"></i>
+                                    <p>FREE PARKING available for all visitors</p>
+                                </div>
+                                <div class="convenience-item">
+                                    <i class="fas fa-bus"></i>
+                                    <p>5-minute walk from public transit</p>
+                                </div>
+                                <div class="convenience-item">
+                                    <i class="fas fa-baby"></i>
+                                    <p>Family-friendly entrance and facilities</p>
+                                </div>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-directions"></i> START YOUR JOURNEY NOW
+                                </a>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-share-alt"></i> TELL FRIENDS & FAMILY
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insider Access Capture -->
+        <section class="newsletter" id="join">
+            <div class="container">
+                <h2>JOIN THE SWEET SHUK FAMILY</h2>
+                <p class="section-lead">Some sweets are so rare, so special, that we only announce them to our inner circle</p>
+                
+                <div class="newsletter-container">
+                    <div class="benefits-list">
+                        <h3>Become part of our community and receive:</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-key"></i>
+                                <span>SECRET MENU access to limited-edition treats not available to the public</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-bell"></i>
+                                <span>FIRST NOTICE when rare international shipments arrive (before they sell out)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>PRIORITY BOOKING for our most popular workshops and events</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-gift"></i>
+                                <span>SWEET SURPRISE on your birthday and subscription anniversary</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="signup-form">
+                        <div class="immediate-reward">
+                            <img src="images/welcome-gift.jpg" alt="Taste of Jerusalem Welcome Gift">
+                            <p>Join now and receive our 'Taste of Jerusalem' welcome gift on your first visit</p>
+                        </div>
+                        
+                        <div class="fear-loss">
+                            <p>Last month's subscriber-exclusive Turkish Delight sold out in 3 hours</p>
+                        </div>
+                        
+                        <form id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit" class="btn btn-primary btn-pulse">BECOME AN INSIDER</button>
+                            </div>
+                        </form>
+                        
+                        <div class="social-proof">
+                            <p>Join 5,000+ sweet insiders who never miss a special release</p>
+                        </div>
+                        
+                        <div class="trust-element">
+                            <p>We treasure your inbox as much as our recipes - expect only the sweetest updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-primary">
+                <h2>YOU'RE PART OF OUR STORY NOW</h2>
+                
+                <div class="community-metrics">
+                    <div class="metric">
+                        <span class="metric-number" data-count="12543">12,543</span>
+                        <span class="metric-label">sweet memories created</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number" data-count="8721">8,721</span>
+                        <span class="metric-label">family traditions started</span>
+                    </div>
+                </div>
+                
+                <div class="social-invitation">
+                    <h3>Join our sweet community</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                            <span>24.3K</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>18.7K</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                            <span>42.1K</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-pinterest"></i>
+                            <span>9.4K</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="personal-touch">
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-4567</span>
+                        <span class="owner-note">Sara (Owner) is ready to answer your questions</span>
+                        <span class="call-times">Best times to call: 9AM-11AM & 3PM-5PM</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Sweet Stories</h3>
+                    <ul>
+                        <li><a href="#">Sweet Stories From Our Community</a></li>
+                        <li><a href="#">Bringing Israel's Flavors Home</a></li>
+                        <li><a href="#">The History Behind Our Treasures</a></li>
+                        <li><a href="#">Planning Your Perfect Visit</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Explore Sweet Shuk</h3>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#treasures">Sweet Treasures</a></li>
+                        <li><a href="#events">Experiences & Events</a></li>
+                        <li><a href="#visit">Visit Us</a></li>
+                        <li><a href="#join">Join Our Family</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Practical Matters</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Frequently Asked Questions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="final-cta">
+                    <a href="#hero" class="btn btn-primary btn-large">BEGIN YOUR SWEET JOURNEY</a>
+                </div>
+                
+                <div class="trust-elements">
+                    <div class="payment-methods">
+                        <span>We accept:</span>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                    
+                    <div class="security-badges">
+                        <span>Secure & Trusted:</span>
+                        <img src="images/secure-badge.png" alt="Secure Shopping">
+                        <img src="images/trusted-badge.png" alt="Trusted Business">
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2025 Sweet Shuk. All Rights Reserved. A little piece of Israel's magic in every sweet.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+      </body>
+</html>
