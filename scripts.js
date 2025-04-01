@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function initHeader() {
   const header = document.querySelector('.site-header');
+  
+  if (!header) return;
+  
   const headerHeight = header.offsetHeight;
   
   window.addEventListener('scroll', function() {
@@ -27,8 +30,11 @@ function initHeader() {
     }
   });
   
-  // Add padding to body equal to header height
-  document.body.style.paddingTop = headerHeight + 'px';
+  // Add padding to main content based on header height to prevent content from being hidden
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    hero.style.marginTop = headerHeight + 'px';
+  }
 }
 
 /**
